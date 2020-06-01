@@ -13,17 +13,18 @@ namespace Test01
         {
         AlternatingCoins ts = new AlternatingCoins();
 
-            int[] a = new int[] { 1, 1, 0, 1, 0, 1, 0 };
+            int[] a = new int[] { 1, 0, 1, 0, 1, 1 };
 
             int[] b = new int[] { 0, 1, 1, 0 };
+            int[] c = new int[] { 1, 1, 0, 0 };
 
 
+            //ts.solution(a);
+            //ts.solution(b);
             ts.solution(a);
-            ts.solution(b);
+            //AngryFrogs af = new AngryFrogs();
 
-            AngryFrogs af = new AngryFrogs();
-
-            int[] c = new int[] { 0, 1, 1, 0 };
         }
+
     }
 }

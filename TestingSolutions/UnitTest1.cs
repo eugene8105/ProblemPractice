@@ -20,8 +20,10 @@ namespace TestingSolutions
 
             int[] d = new int[] { 0, 1, 1, 0 };             // should return 2
 
-            Assert.AreEqual(0, ac.solution(c));
-
+            //Assert.AreEqual(1, ac.solution(a));
+            //Assert.AreEqual(2, ac.solution(b));
+            //Assert.AreEqual(0, ac.solution(c));
+            //Assert.AreEqual(2, ac.solution(d));  
         }
     }
 }
