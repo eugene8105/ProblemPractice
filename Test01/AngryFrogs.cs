@@ -8,12 +8,26 @@ namespace Test01
 {
     class AngryFrogs
     {
-        public int solution(int[] blocks)
+        public int solution(int[] blocks, int frogIndex)
         {
-            int numOfJumps = 0;
-            for (int i = 0; i < blocks.Length; i++)
+            //int frogIndex = 0;
+            
+            int numOfJumps = 1;
+            // first frog
+            for (int i = frogIndex + 1; i < blocks.Length; i++)
             {
-
+                if(blocks[i] >= blocks[i - 1])
+                {
+                    numOfJumps++;
+                }
+            }
+            // second frog
+            for (int i = frogIndex - 1; i > blocks.Length; i--)
+            {
+                if (blocks[i] >= blocks[i + 1])
+                {
+                    numOfJumps++;
+                }
             }
 
             return numOfJumps;
